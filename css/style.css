@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Gilroy-extrabold";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-light";
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -31,7 +45,8 @@ html {
 }
 
 .main-body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  /* font-family: "Gilroy", "Arial", sans-serif; */
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
