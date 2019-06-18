@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="container-center">
-    <header class="header">
+  <header class="header">
+    <div class="container-center">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "device"</h1>
       <nav class="nav">
         <a class="logo" href="index.html">
@@ -18,9 +18,11 @@
         </a>
         <ul class="nav-user">
           <li class="nav-user-item user-search">
-            <input type="search" placeholder="Поиск по сайту">
+            <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+              <input type="search" placeholder="Поиск по сайту">
+              <button class="nav-search-submit" type="submit">Найти</button>
+            </form>
           </li>
-          <!-- Как реализуется наша логика авторизации в рамках этого курса? А как в настоящих проектах она реализуется? -->
           <li class="nav-user-item user-authorization">
             <a class="user-authorization-name" href="#">Валентин Петухов</a>
             <a class="user-authorization-exit">Выйти</a>
@@ -69,66 +71,128 @@
       </nav>
       <nav class="nav">
       </nav>
-    </header>
-    <main>
-      <h2 class="catalog-title">Моноподы для селфи</h2>
-      <h3 class="search-form-title">Фильтр:</h3>
-      <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="search-price">
-          <legend class="search-price-title">Стоимость</legend>
-          <div class="price-controls">
-            <label class="min-price">
-              от
-              <input type="text" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-              до
-              <input type="text" name="max-price" value="5000">
-            </label>
-          </div>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
-            </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
-          </div>
-        </fieldset>
-        <fieldset class="search-color">
-          <legend class="search-color-title">Цвет</legend>
-          <input class="search-input" type="checkbox" id="search-color-black" name="black" checked>
-          <label class="search-color-item" for="search-color-black">Черный</label>
-          <input class="search-input" type="checkbox" id="search-color-white" name="white">
-          <label class="search-color-item" for="search-color-white">Белый</label>
-          <input class="search-input" type="checkbox" id="search-color-blue" name="blue" checked>
-          <label class="search-color-item" for="search-color-blue">Синий</label>
-          <input class="search-input" type="checkbox" id="search-color-red" name="red" checked>
-          <label class="search-color-item" for="search-color-red">Красный</label>
-          <input class="search-input" type="checkbox" id="search-color-pink" name="pink">
-          <label class="search-color-item" for="search-color-pink">Розовый</label>
-        </fieldset>
-        <fieldset class="search-bluetooth">
-          <legend class="search-bluetooth-title">Bluetooth</legend>
-          <input class="search-radio" type="radio" id="bluetooth-on" name="included" checked>
-          <label class="search-bluetooth-item" for="bluetooth-on">Есть</label>
-          <input class="search-radio" type="radio" id="bluetooth-off" name="disabled">
-          <label class="search-bluetooth-item" for="bluetooth-off">Нет</label>
-        </fieldset>
-      </form>
-      <div class="search-sort">
-        <span class="search-sort-span">Сортировка:</span>
-        <ul class="search-sort-list">
-          <li class="search-sort-item"> <a>По цене</a> </li>
-          <li class="search-sort-item"> <a href="#">По типу</a> </li>
-          <li class="search-sort-item"> <a href="#">По популярности</a> </li>
-        </ul>
-        <div class="container-control">
-          <a class="search-control-top" href="#" aria-label="по возрастанию"></a>
-          <a class="search-control-down" aria-label="по убыванию"></a>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="catalog-title">Моноподы для селфи</h2>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a>Моноподы для селфи</a>
+      </li>
+    </ul>
+    <h3 class="search-form-title">Фильтр:</h3>
+    <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+      <fieldset class="search-price">
+        <legend class="search-price-title">Стоимость</legend>
+        <div class="price-controls">
+          <label class="min-price">
+            от
+            <input type="text" name="min-price" value="0">
+          </label>
+          <label class="max-price">
+            до
+            <input type="text" name="max-price" value="5000">
+          </label>
         </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+      </fieldset>
+      <fieldset class="search-color">
+        <legend class="search-color-title">Цвет</legend>
+        <input class="search-input" type="checkbox" id="search-color-black" name="black" checked>
+        <label class="search-color-item" for="search-color-black">Черный</label>
+        <input class="search-input" type="checkbox" id="search-color-white" name="white">
+        <label class="search-color-item" for="search-color-white">Белый</label>
+        <input class="search-input" type="checkbox" id="search-color-blue" name="blue" checked>
+        <label class="search-color-item" for="search-color-blue">Синий</label>
+        <input class="search-input" type="checkbox" id="search-color-red" name="red" checked>
+        <label class="search-color-item" for="search-color-red">Красный</label>
+        <input class="search-input" type="checkbox" id="search-color-pink" name="pink">
+        <label class="search-color-item" for="search-color-pink">Розовый</label>
+      </fieldset>
+      <fieldset class="search-bluetooth">
+        <legend class="search-bluetooth-title">Bluetooth</legend>
+        <input class="search-radio" type="radio" id="bluetooth-on" name="bluetooth" value="on" checked>
+        <label class="search-bluetooth-item" for="bluetooth-on">Есть</label>
+        <input class="search-radio" type="radio" id="bluetooth-off" name="bluetooth" value="off">
+        <label class="search-bluetooth-item" for="bluetooth-off">Нет</label>
+      </fieldset>
+      <button class="search-form-submit button" type="submit">Показать</button>
+    </form>
+    <div class="search-sort">
+      <span class="search-sort-span">Сортировка:</span>
+      <ul class="search-sort-list">
+        <li class="search-sort-item"> <a>По цене</a> </li>
+        <li class="search-sort-item"> <a href="#">По типу</a> </li>
+        <li class="search-sort-item"> <a href="#">По популярности</a> </li>
+      </ul>
+      <div class="container-control">
+        <a class="search-control-top" href="#" aria-label="по возрастанию"></a>
+        <a class="search-control-down" aria-label="по убыванию"></a>
       </div>
-    </main>
-  </div>
+    </div>
+    <div class="catalog-product">
+      <ul class="product-list">
+        <li class="product-item">
+          <div class="flag flag-new">New</div>
+          <div class="product-actions">
+            <a href="#" class="product-basket">В корзину</a>
+            <a href="#" class="product-compare">Добавить к сравнению</a>
+          </div>
+          <div class="product-image"><img width="360" height="380" src="img/.jpg"></div>
+          <div class="product-title">Любительская селфи-палка</div>
+          <div class="product-price">500 руб.</div>
+        </li>
+        <li class="product-item">
+          <div class="flag flag-new">New</div>
+          <div class="product-actions">
+            <a href="#" class="product-basket">В корзину</a>
+            <a href="#" class="product-compare">Добавить к сравнению</a>
+          </div>
+          <div class="product-image"><img width="360" height="380" src="img/.jpg"></div>
+          <div class="product-title">Профессиональная селфи-палка</div>
+          <div class="product-price">1500 руб.</div>
+        </li>
+        <li class="product-item">
+          <div class="flag flag-new">New</div>
+          <div class="product-actions">
+            <a href="#" class="product-basket">В корзину</a>
+            <a href="#" class="product-compare">Добавить к сравнению</a>
+          </div>
+          <div class="product-image"><img width="360" height="380" src="img/.jpg"></div>
+          <div class="product-title">Непотопляемая селфи-палка</div>
+          <div class="product-price">2500 руб.</div>
+        </li>
+        <li class="product-item">
+          <div class="flag flag-new">New</div>
+          <div class="product-actions">
+            <a href="#" class="product-basket">В корзину</a>
+            <a href="#" class="product-compare">Добавить к сравнению</a>
+          </div>
+          <div class="product-image"><img width="360" height="380" src="img/.jpg"></div>
+          <div class="product-title">селфи-палка "Следуй за мной"</div>
+          <div class="product-price">4900 руб.</div>
+        </li>
+      </ul>
+      <a class="catalog-product-button product-button-back" href="#">Назад</a>
+      <a class="catalog-product-page" href="#" aria-label="Перейти к странице 1">1</a>
+      <a class="catalog-product-page" href="#" aria-label="Перейти к странице 2">2</a>
+      <a class="catalog-product-page" href="#" aria-label="Перейти к странице 3">3</a>
+      <a class="catalog-product-button product-button-next" href="#">Вперед</a>
+    </div>
+  </main>
 
   <footer class="catalog-footer footer">
     <a class="logo" href="#">
@@ -152,7 +216,7 @@
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <address class="footer-phone">Тел.: +7 (495) 495-95-95</address>
+    <a class="footer-phone" href="tel:8-495-495-95-95">Тел.: +7 (495) 495-95-95</a>
     <ul class="social-list">
       <li class="social-item">
         <a class="social-button" href="#" aria-label="device в Фейсбуке"><img src="img/.svg" alt="Фейсбук" width="17"
