@@ -66,9 +66,63 @@
             <nav class="nav">
             </nav>
           </header>
-
           <main>
-
+            <h2 class="catalog-title">Моноподы для селфи</h2>
+            <h3 class="search-form-title">Фильтр:</h3>
+              <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+                <fieldset class="search-price">
+                    <legend class="search-price-title">Стоимость</legend>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        от
+                        <input type="text" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до
+                        <input type="text" name="max-price" value="5000">
+                      </label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                </fieldset>
+                <fieldset class="search-color">
+                    <legend class="search-color-title">Цвет</legend>
+                    <input class="search-input" type="checkbox" id="search-color-black" name="black" checked>
+                    <label class="search-color-item" for="search-color-black">Черный</label>
+                    <input class="search-input" type="checkbox" id="search-color-white" name="white">
+                    <label class="search-color-item" for="search-color-white">Белый</label>
+                    <input class="search-input" type="checkbox" id="search-color-blue" name="blue" checked>
+                    <label class="search-color-item" for="search-color-blue">Синий</label>
+                    <input class="search-input" type="checkbox" id="search-color-red" name="red" checked>
+                    <label class="search-color-item" for="search-color-red">Красный</label>
+                    <input class="search-input" type="checkbox" id="search-color-pink" name="pink">
+                    <label class="search-color-item" for="search-color-pink">Розовый</label>
+                </fieldset>
+                <fieldset class="search-bluetooth">
+                  <legend class="search-bluetooth-title">Bluetooth</legend>
+                  <input class="search-radio" type="radio" id="bluetooth-on" name="included" checked>
+                  <label class="search-bluetooth-item" for="bluetooth-on">Есть</label>
+                  <input class="search-radio" type="radio" id="bluetooth-off" name="disabled">
+                  <label class="search-bluetooth-item" for="bluetooth-off">Нет</label>
+                </fieldset>
+                </form>
+                <div class="search-sort">
+                    <span class="search-sort-span">Сортировка:</span>
+                    <ul class="search-sort-list">
+                      <li class="search-sort-item"> <a>По цене</a> </li>
+                      <li class="search-sort-item"> <a href="#">По типу</a> </li>
+                      <li class="search-sort-item"> <a href="#">По популярности</a> </li>
+                    </ul>
+                    <div class="container-control">
+                      <a class="search-control-top" href="#" aria-label="по возрастанию"></a>
+                      <a class="search-control-down" aria-label="по убыванию"></a>
+                    </div>
+                  </div>
           </main>
 
           <footer class="catalog-footer footer">
@@ -77,8 +131,8 @@
                 </a>
                 <ul class="nav-user nav-user-footer">
                   <li class="nav-user-item authorization-footer">
-                      <a class="user-authorization-name" href="#">Валентин Петухов</a>
-                      <a class="user-authorization-exit">Выйти</a>
+                      <a class="user-authorization-name authorization-name-footer" href="#">Валентин Петухов</a>
+                      <a class="user-authorization-exit authorization-exit-footer">Выйти</a>
                   </li>
                   <li class="nav-user-item compare-footer">
                     <a href="#">Сравнить</a>
