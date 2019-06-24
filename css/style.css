@@ -735,3 +735,34 @@ color: rgba(0, 0, 0, 0.3)
 .main-catalog-item:active::before {
   background-color: rgb(240, 197, 46);
 }
+
+/* --------------------------------СЛАЙДЕР СЕРВИСЫ --------------------------------------- */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 130px;
+  min-height: 170px;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.services-slider-controls {
+width: 280px;
+margin-right: 120px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.services-slider-guarantee,
+.services-slider-credit {
+display: none;
+}
+
+.services-slider-item {
+  width: 460px;
+}
