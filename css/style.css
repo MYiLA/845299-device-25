@@ -397,46 +397,35 @@ opacity: 0.3;
 
 .promo {
   position: relative;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 }
 
 .promo-slider-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: -10px;
 }
 
 .promo-slider-item {
   display: none;
-  padding-left: 90px;
-  padding-right: 81px;
 }
 
 .slider-quadcopter {
-  /* padding-left: 80px; */
   padding-right: 0;
 }
 
-/* .promo-slider-item:nth-child(1) {
-  display: flex;
-  flex-direction: row;
-} */
-
-.promo-slider-item img {
-  margin-right: 115px;
-}
-
-.slider-quadcopter img {
-  padding-top: 90px;
-  margin-right: 50px;
+.slider-img-container {
+  margin-right: 40px;
+  width: 560px;
+  text-align: center;
+  vertical-align: top;
 }
 
 .promo-number {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: -64px;
+  top: -30px;
   right: 55px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179.2px;
@@ -446,32 +435,30 @@ opacity: 0.3;
 }
 
 .promo-slider-container {
-  width: 490px;
+  width: 500px;
   padding-top: 60px;
-}
-
-.slider-quadcopter-container {
-  padding-top: 90px;
 }
 
 .promo-slider-container :last-child {
   margin-bottom: 0;
 }
 
-.promo-number::before {
+.promo-title::before {
   content: "";
   position: absolute;
   width: 100px;
   height: 7px;
-  top: 84px;
-  left: -321px;
+  top: -35px;
+  left: 0;
   background-color: rgb(255, 255, 255);
+  z-index: 4;
 }
 
 .promo-title {
+  position: relative;
   display: block;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
@@ -483,12 +470,12 @@ opacity: 0.3;
 .promo-desc {
   display: block;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 0;
 }
 
 .promo-item-button {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-right: 20px;
 }
 
@@ -560,7 +547,6 @@ z-index: -1;
   right: 60px;
   bottom: 160px;
   z-index: 1;
-  /* width: 160px; */
   height: 18px;
   text-align: center;
   font-size: 0;
@@ -607,19 +593,3 @@ z-index: -1;
   display: flex;
   flex-direction: row;
 }
-
-/* #product-1:checked ~ .promo-slider-controls .slider-controls-item-1::before,
-#product-2:checked ~ .promo-slider-controls .slider-controls-item-2::before,
-#product-3:checked ~ .promo-slider-controls .slider-controls-item-3::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-  background-color: inherit;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
-} */

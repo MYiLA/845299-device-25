@@ -78,9 +78,9 @@
     <main class="index-main">
       <section class="promo">
         <h2 class="visually-hidden">Промо-товары</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle-slider" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle-slider">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle-slider">
         <div class="promo-slider-controls">
           <label class="promo-controls-item slider-controls-item-1" for="product-1">Первый</label>
           <label class="promo-controls-item slider-controls-item-2" for="product-2">Второй</label>
@@ -88,7 +88,9 @@
         </div>
         <ol class="promo-slider-list">
           <li class="promo-slider-item">
-            <img src="img/promo-slider-1.png" alt="Палка для селфи" width="384" height="486">
+              <div class="slider-img-container">
+                <img src="img/promo-slider-1.png" alt="Палка для селфи" width="384" height="486">
+              </div>
             <span class="promo-number">01</span>
             <div class="promo-slider-container">
               <b class="promo-title">
@@ -114,49 +116,54 @@
             </div>
           </li>
           <li class="promo-slider-item">
-            <img src="img/promo-slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+              <div class="slider-img-container">
+                <img src="img/promo-slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+              </div>
+              
             <span class="promo-number">02</span>
             <div class="promo-slider-container">
-                <b class="promo-title">
-              Худеем<br>правильно!
-            </b>
-            <p class="promo-desc">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы
-              не пропускать занятия и соблюдать диету.
-            </p>
-            <a class="promo-item-button button" href="#">Подробнее</a>
-            <table class="promo-table">
-              <tr class="promo-table-value">
-                <td>48&nbspчасов</td>
-              </tr>
-              <tr class="promo-table-desc">
-                <td>Без&nbspподзарядки</td>
-              </tr>
-            </table>
+              <b class="promo-title">
+                Худеем<br>правильно!
+              </b>
+              <p class="promo-desc">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="promo-item-button button" href="#">Подробнее</a>
+              <table class="promo-table">
+                <tr class="promo-table-value">
+                  <td>48&nbspчасов</td>
+                </tr>
+                <tr class="promo-table-desc">
+                  <td>Без&nbspподзарядки</td>
+                </tr>
+              </table>
             </div>
           </li>
-          <li class="promo-slider-item slider-quadcopter">
-            <img src="img/promo-slider-3.png" alt="Квадрокоптер" width="526" height="334">
+          <li class="promo-slider-item">
+              <div class="slider-img-container">
+                <img src="img/promo-slider-3.png" alt="Квадрокоптер" width="526" height="334">
+              </div>
             <span class="promo-number">03</span>
-            <div class="promo-slider-container slider-quadcopter-container">
+            <div class="promo-slider-container">
               <b class="promo-title">
-              Порхает&nbspкак&nbspбабочка, жалит как пчела!
-            </b>
-            <p class="promo-desc">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен
-              мощным лазером, замаскированным под стандартную камеру.
-            </p>
-            <a class="promo-item-button button" href="#">Подробнее</a>
-            <table class="promo-table">
-              <tr class="promo-table-value">
-                <td>800&nbspм</td>
-                <td>50&nbspм</td>
-              </tr>
-              <tr class="promo-table-desc">
-                <td>Дальность&nbspполета</td>
-                <td>Радиус&nbspпоражения</td>
-              </tr>
-            </table>
+                Порхает&nbspкак&nbspбабочка, жалит как пчела!
+              </b>
+              <p class="promo-desc">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="promo-item-button button" href="#">Подробнее</a>
+              <table class="promo-table">
+                <tr class="promo-table-value">
+                  <td>800&nbspм</td>
+                  <td>50&nbspм</td>
+                </tr>
+                <tr class="promo-table-desc">
+                  <td>Дальность&nbspполета</td>
+                  <td>Радиус&nbspпоражения</td>
+                </tr>
+              </table>
             </div>
           </li>
         </ol>
