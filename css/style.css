@@ -934,3 +934,41 @@ html {
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
+
+.partners {
+  margin-bottom: 110px;
+}
+
+.partners-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.partners-item {
+  width: 260px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.partners-item  img {
+filter: grayscale(1);
+opacity: 0.2;
+}
+
+.partners-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.partners-item a:hover img,
+.partners-item a:focus img {
+  filter: none;
+  opacity: 1;
+}
