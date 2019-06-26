@@ -796,7 +796,6 @@ html {
   position: relative;
   width: 285px;
   margin-right: 120px;
-  /* border-right: 7px solid rgb(0, 0, 0); */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -946,7 +945,6 @@ margin: 0;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-
 }
 
 .partners-item {
