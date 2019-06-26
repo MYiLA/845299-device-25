@@ -46,7 +46,7 @@ html {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(70, 70, 70);
   background-color: rgb(255, 255, 255);
 }
 
@@ -513,6 +513,7 @@ html {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+  letter-spacing: 2px;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
 }
@@ -969,4 +970,25 @@ opacity: 0.2;
 .partners-item a:focus img {
   filter: none;
   opacity: 1;
+}
+
+.info-contacts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+.info {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+  width: 462px;
+  margin-right: 135px;
+}
+
+.contacts {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+  width: 560px;
 }
